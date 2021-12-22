@@ -11,7 +11,6 @@
 
 import streamlit as st
 import pandas as pd
-import xlrd
 import numpy as np
 import seaborn as sns
 import plotly.graph_objects as go
