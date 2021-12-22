@@ -25,7 +25,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import warnings
 warnings.filterwarnings("ignore")
 
-data =pd.read_excel("F:\\Datascience_project\\project\\CO2_dataset.xlsx")
+data =pd.read_excel("CO2_dataset.xlsx")
 
 final_arima = ARIMA(data['CO2'],order = (3,1,4))
 final_arima = final_arima.fit()
