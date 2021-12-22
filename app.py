@@ -11,6 +11,7 @@
 
 import streamlit as st
 import pandas as pd
+import xlrd
 import numpy as np
 import seaborn as sns
 import plotly.graph_objects as go
@@ -25,7 +26,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import warnings
 warnings.filterwarnings("ignore")
 
-data =pd.read_csv("CO2_dataset.csv")
+data =pd.read_excel("CO2 dataset.xlsx", sheet_name="Sheet1", parse_dates=True")
 
 final_arima = ARIMA(data['CO2'],order = (3,1,4))
 final_arima = final_arima.fit()
