@@ -5,3 +5,4 @@ seaborn==0.11.2
 streamlit==1.2.0
 statsmodels==0.13.1
 matplotlib==3.5.1
+xlrd==2.0.1
