@@ -25,7 +25,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import warnings
 warnings.filterwarnings("ignore")
 
-data =pd.read_csv('https://github.com/ranadeep001/forecastCO2/blob/81eace70fbd2b7050f4565580f66c271adcac775/CO2_dataset.csv')
+data =pd.read_csv("https:/github.com/ranadeep001/forecastCO2/blob/81eace70fbd2b7050f4565580f66c271adcac775/CO2_dataset.csv")
 
 final_arima = ARIMA(data['CO2'],order = (3,1,4))
 final_arima = final_arima.fit()
