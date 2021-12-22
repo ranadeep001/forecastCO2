@@ -6,3 +6,4 @@ streamlit==1.2.0
 statsmodels==0.13.1
 matplotlib==3.5.1
 xlrd==2.0.1
+openpyxl==3.0.9
